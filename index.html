@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>My Personal Website - IML470</title>
+<style>
+  nav { 
+    background-color: rgba(245, 189, 2, 0.7); 
+    padding: 15px; 
+    text-align: center; 
+    border-top: 2px solid darkgoldenrod; 
+    border-bottom: 2px solid darkgoldenrod;
+  }
+
+  nav a {
+    color: darkblue; 
+    font-family: Georgia, serif; 
+    font-weight: bold; 
+    padding: 10px 90px; 
+    margin: 0px 10px; 
+    border: 2px solid white; 
+    border-radius: 8px; 
+    background-color: rgba(255, 255, 255, 0.7); 
+    display: inline-block; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: darkblue; 
+    color: white; 
+    border-color: darkblue;
+  }
+  .scroll-top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      z-index: 1000;
+    }
+
+    .scroll-top-btn img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .scroll-top-btn img:hover {
+      transform: scale(1.1);
+    }
+</style>
+</head>
+<body style="background-image: url('https://thumbs.dreamstime.com/b/aesthetic-view-blue-sky-picture-has-been-clicked-me-beautiful-clouds-167942645.jpg'); background-size: cover; background-position: center;">
+
+<header style="background-color: rgba(255, 255, 255, 0.7); padding: 20px 0;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+    <div style="padding: 5px;">
+      <img src="https://png.pngtree.com/png-vector/20220609/ourmid/pngtree-sketch-of-marble-lying-lion-statue-profile-view-png-image_4839605.png" alt="Left Image" style="height: 80px; display: block; transform: scaleX(-1);" />
+    </div>
+
+    <h1 style="color: yellow; background-color: rgba(0, 0, 0, 0.8); border: 3px solid white; border-radius: 12px; padding: 20px 40px; margin: 0;"> Welcome to My Website</h1>
+
+    <div style="padding: 5px;">
+      <img src="https://png.pngtree.com/png-vector/20220609/ourmid/pngtree-sketch-of-marble-lying-lion-statue-profile-view-png-image_4839605.png" alt="Right Image" style="height: 80px; display: block;" />
+    </div>
+  </div> 
+
+  <div style="text-align: center; margin-top: 20px;">
+    <div style="display: inline-block; background-color: rgba(255, 255, 255, 0.2); padding: 10px; border: 2px solid black; border-radius: 12px;">
+      <p style="font-size: 20px; font-family: Georgia, serif; margin: 0 0 5px 0;"><b>Made By:</b></p>
+      <p style="font-size: 24px; font-family: 'Times New Roman', 'Courier New', cursive; margin: 0;">
+        MAVEN ALEX JOWELL ANAK UMPUL
+      </p>
+      <p style="font-size: 18px; font-family: 'Times New Roman', 'Courier New', cursive; margin: 5px 0 0 0; color: darkblue;">
+        (2024672454)
+      </p>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin: 20px 0 5px 0;">
+    <div style="display: inline-block; background-color: rgba(255, 255, 255, 0.2); padding: 10px; border: 2px solid black; border-radius: 12px;">
+      <p><strong>My Email:</strong></p>
+      <p><a href="mailto:2024672454@student.uitm.edu.my">2024672454@student.uitm.edu.my</a></p>
+    </div>
+  </div>
+</header>
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="https://logos-download.com/wp-content/uploads/2017/11/UiTM_Universiti_Teknologi_MARA_logo.svg" alt="UiTM Logo" 
+  style="width: 300px; height: auto; border: 2px solid gold; border-radius: 30px; padding: 20px; background-color: white;" />
+</div>
+
+<nav>
+  <a href="about.html">About Me</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="achievement.html">Achievements</a>
+  <a href="education.html">Education</a>
+</nav>
+
+<main>
+  <p style="font-size: 20px; font-family: 'Georgia', serif; background-color: white; padding: 15px; border: 2px solid gold; border-radius: 10px; width: 60%; margin: 20px auto; box-shadow: 2px 2px 8px rgba(0,0,0,0.2); text-align: center;">
+    I am currently studying <span style="font-weight: bold; color: darkblue;">IML470: Introduction to Web Development</span> at UiTM.<br />
+    <span style="color: darkgreen;">I enjoy learning how to design websites!</span>
+  </p>
+
+  <div style="text-align: center; margin-top: 10px;">
+    <div class="fav-topics" style="display: inline-block; background-color: #f9f9f9; border: 2px solid gold; border-radius: 15px; padding: 20px 40px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      <h2 style="font-family: 'Georgia', serif; color: darkblue; margin: 15px 15px; position: relative; display: inline-block;">
+        My Favourite Topics
+        <span style="display: block; height: 3px; width: 100%; background-color: darkblue; margin: 4px auto 0; border-radius: 2px;"></span>
+      </h2>
+
+      <ul style="list-style: none; padding: 0; text-align: center; margin-top: 10px;">
+        <li><a href="https://www.w3schools.com/html/" style="color: darkgreen; font-weight: bold; font-family: 'Georgia', serif; padding: 5px 10px; border-radius: 5px; display: block; margin: 5px 0; transition: background-color 0.3s, color 0.3s;">Learning HTML</a></li>
+        <li><a href="https://www.w3schools.com/css/" style="color: darkgreen; font-weight: bold; font-family: 'Georgia', serif; padding: 5px 10px; border-radius: 5px; display: block; margin: 5px 0; transition: background-color 0.3s, color 0.3s;">Styling with CSS</a></li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer style="text-align: center; margin: 20px 0;">
+  <p>This website was created for the IML470 course.<br /> &copy; 2025 Maven Alex Jowell</p>
+</footer>
+<a href="#top" class="scroll-top-btn">
+    <img src="images/arrow.png" alt="Back to Top">
+  </a>
+</body>
+</html>
