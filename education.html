@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Academic Results - IML470</title>
+  <title>My Achievements - IML470</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
 
@@ -23,23 +23,17 @@
       padding: 25px 0;
       text-align: center;
       font-size: 3rem;
-      font-family: 'Playfair Display', serif;
+      position: relative;
+      font-family: 'Playfair Display', serif; 
       font-weight: 700;
       letter-spacing: 2px;
       user-select: none;
     }
 
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 50px auto;
       padding: 20px;
-    }
-
-    h2 {
-      text-align: center;
-      color: #1f2937;
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
     }
 
     table {
@@ -53,18 +47,42 @@
 
     th, td {
       padding: 15px;
-      border-bottom: 1px solid #e2e8f0;
       text-align: center;
+      border-bottom: 1px solid #ccc;
     }
 
     th {
       background-color: #1e3a8a;
       color: white;
-      font-weight: 600;
     }
 
-    tr:last-child td {
-      border-bottom: none;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .certificates {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .certificates img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .award {
+      background-color: #fff;
+      padding: 25px;
+      margin-top: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      font-size: 18px;
     }
 
     footer {
@@ -123,34 +141,12 @@
       box-shadow: 3px 3px 12px rgba(203, 213, 225, 0.9);
       color: #1e3a8a;
     }
-
-    .scroll-top-btn {
-      position: fixed;
-      bottom : 20px;
-      right: 20px;
-      width: 60px;
-      height: 60px;
-      z-index: 1000;
-    }
-
-    .scroll-top-btn img {
-      width: 100%;
-      height: auto;
-      cursor: pointer;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .scroll-top-btn img:hover {
-      transform: scale(1.1);
-    }
   </style>
 </head>
 <body id="top">
 
   <header>
-    MY ACADEMIC RESULTS
+    MY ACHIEVEMENTS
   </header>
 
   <main>
@@ -167,41 +163,49 @@
       <tbody>
         <tr>
           <td>UPSR</td>
-          <td>Sekolah Kebangsaan Tobobon</td>
+          <td>SK [Your Primary School]</td>
           <td>2016</td>
           <td>3A 2B 1C</td>
         </tr>
         <tr>
           <td>PT3</td>
-          <td>Sekolah Menengah Saint Peter Telipok</td>
+          <td>SMK [Your High School]</td>
           <td>2019</td>
           <td>7A 2B</td>
         </tr>
         <tr>
           <td>SPM</td>
-          <td>Sekolah Menengah Saint Peter Telipok</td>
+          <td>SMK [Your High School]</td>
           <td>2021</td>
           <td>5A 3B+</td>
         </tr>
         <tr>
           <td>STPM</td>
-          <td>Kolej Tingkatan Enam Kota Kinabalu</td>
+          <td>Kolej Tingkatan Enam [Your College Name]</td>
           <td>2023</td>
           <td>CGPA 3.17</td>
         </tr>
       </tbody>
     </table>
+
+    <div class="award">
+      🎓 <strong>2024 Award Session:</strong> Bachelor of Information Science (Hons.) Library Science  
+      <br>College of Computing, Informatics and Mathematics
+    </div>
+
+    <h2>My Certificates</h2>
+    <div class="certificates">
+      <img src="images/spm.jpeg" alt="Certificate SPM">
+      <img src="images/stpm.jpeg" alt="Certificate STPM">
+      <img src="images/deansem1.jpeg" alt="Certificate DEAN SEM 1">
+    </div>
   </main>
 
   <footer>
-    <a href="achievement.html" class="button">← Achievement</a>
+    <a href="gallery.html" class="button">← Gallery</a>
     <a href="index.html" class="button home">Home</a>
     <a href="education.html" class="button">Education →</a>
   </footer>
-
-  <a href="#top" class="scroll-top-btn">
-    <img src="images/arrow.png" alt="Back to Top" />
-  </a>
 
 </body>
 </html>
